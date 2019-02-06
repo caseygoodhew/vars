@@ -1,0 +1,29 @@
+{
+    "name": "vars",
+    "version": "1.0.0",
+    "description": "Easily pull variables from the environment, command line arguments and config files",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/mocha \"test/**/*.spec.js\" --reporter spec"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/caseygoodhew/vars.git"
+    },
+    "keywords": [
+        "vars",
+        "environment",
+        "cli",
+        "args"
+    ],
+    "author": "Casey Goodhew",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/caseygoodhew/vars/issues"
+    },
+    "homepage": "https://github.com/caseygoodhew/vars#readme",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^5.2.0"
+    }
+}
