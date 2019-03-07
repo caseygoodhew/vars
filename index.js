@@ -1,7 +1,15 @@
-const _filter = require('filter');
+const _json = require('./json');
 
 module.exports = {
-    env: (filter) => require('./env')(_filter(filter)),
-    argv: (filter) => require('./argv')(_filter(filter)),
-    config: (path, filter) => require('./config')(path, _filter(filter))
+    env: ({
+        filter
+    }) => _json(require('./env')(), filter),
+    argv: ({
+        filter,
+        opts
+    }) => _json(require('./argv')(opts), filter),
+    json: ({
+        filter,
+        json
+    }) => _json(json, filter)
 }

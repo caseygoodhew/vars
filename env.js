@@ -1,5 +1,1 @@
-module.exports = (filter) => {
-    const vars = {};
-
-
-}
+module.exports = () => process.env;
